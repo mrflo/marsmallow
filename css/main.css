@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-/* line 12, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 12, /Users/mrflo/marsmallow/css/main.scss */
 html, body {
   width: 100%;
   height: 100%;
@@ -9,17 +9,17 @@ html, body {
   font-size: 1em;
   line-height: 1.4; }
 
-/* line 22, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 22, /Users/mrflo/marsmallow/css/main.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 27, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 27, /Users/mrflo/marsmallow/css/main.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 32, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 32, /Users/mrflo/marsmallow/css/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -28,21 +28,21 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-/* line 46, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 46, /Users/mrflo/marsmallow/css/main.scss */
 audio, canvas, iframe, img, svg, video {
   vertical-align: middle; }
 
-/* line 50, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 50, /Users/mrflo/marsmallow/css/main.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
 
-/* line 56, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 56, /Users/mrflo/marsmallow/css/main.scss */
 textarea {
   resize: vertical; }
 
-/* line 60, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 60, /Users/mrflo/marsmallow/css/main.scss */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -52,7 +52,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 70, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 70, /Users/mrflo/marsmallow/css/main.scss */
 .container {
   height: 100%;
   width: 100%;
@@ -60,7 +60,7 @@ textarea {
   padding: 0;
   position: relative; }
 
-/* line 78, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 78, /Users/mrflo/marsmallow/css/main.scss */
 .landscape-holder {
   overflow: scroll;
   max-width: 100%;
@@ -69,7 +69,7 @@ textarea {
   position: absolute;
   left: 0; }
 
-/* line 87, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 87, /Users/mrflo/marsmallow/css/main.scss */
 .landscape {
   width: 100%;
   min-width: 1136px;
@@ -80,13 +80,13 @@ textarea {
   background: grey;
   position: absolute;
   top: 0; }
-  /* line 97, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+  /* line 97, /Users/mrflo/marsmallow/css/main.scss */
   .landscape img {
     position: absolute;
     left: 100px;
     top: 0; }
 
-/* line 104, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 104, /Users/mrflo/marsmallow/css/main.scss */
 .objects {
   height: 15%;
   width: 100%;
@@ -96,7 +96,7 @@ textarea {
   margin: 0;
   padding: 0;
   overflow: hidden; }
-  /* line 113, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+  /* line 113, /Users/mrflo/marsmallow/css/main.scss */
   .objects .btn {
     position: absolute;
     top: 50%;
@@ -106,22 +106,22 @@ textarea {
     height: 68px;
     width: 17px;
     z-index: 99; }
-    /* line 122, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+    /* line 122, /Users/mrflo/marsmallow/css/main.scss */
     .objects .btn i {
       background-color: black;
       border-radius: 25%;
       border: 1x solid grey;
       padding: 5px;
       cursor: pointer; }
-  /* line 130, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+  /* line 130, /Users/mrflo/marsmallow/css/main.scss */
   .objects .btn-prev {
     left: 0px;
     padding-left: 5px; }
-  /* line 134, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+  /* line 134, /Users/mrflo/marsmallow/css/main.scss */
   .objects .btn-next {
     right: 0px;
     padding-right: 15px; }
-  /* line 138, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+  /* line 138, /Users/mrflo/marsmallow/css/main.scss */
   .objects .slider {
     margin: 0 20px;
     position: absolute;
@@ -129,7 +129,11 @@ textarea {
     height: 100%;
     width: 100%;
     text-align: center; }
-  /* line 146, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+    /* line 145, /Users/mrflo/marsmallow/css/main.scss */
+    .objects .slider img {
+      height: 100%;
+      width: auto; }
+  /* line 150, /Users/mrflo/marsmallow/css/main.scss */
   .objects ul {
     margin: 0;
     padding: 0;
@@ -139,7 +143,7 @@ textarea {
     white-space: nowrap;
     float: left;
     width: 100%; }
-  /* line 156, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+  /* line 160, /Users/mrflo/marsmallow/css/main.scss */
   .objects li {
     margin: 0 10px;
     display: inline-block;
@@ -147,16 +151,16 @@ textarea {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
-  /* line 161, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+    transform: translateY(-50%);
+    height: 65%;
+    max-height: 65%; }
+  /* line 167, /Users/mrflo/marsmallow/css/main.scss */
   .objects li a {
     color: #ffffff;
-    text-decoration: none;
-    width: 100%;
-    display: block; }
+    text-decoration: none; }
 
 /* Prevent the text contents of draggable elements from being selectable. */
-/* line 170, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 174, /Users/mrflo/marsmallow/css/main.scss */
 [draggable] {
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -166,7 +170,7 @@ textarea {
   -khtml-user-drag: element;
   -webkit-user-drag: element; }
 
-/* line 181, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 185, /Users/mrflo/marsmallow/css/main.scss */
 *[draggable=true] {
   -moz-user-select: none;
   -khtml-user-drag: element;
@@ -178,12 +182,12 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 201, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 205, /Users/mrflo/marsmallow/css/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
 
-/* line 206, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 210, /Users/mrflo/marsmallow/css/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -194,7 +198,7 @@ textarea {
   position: absolute;
   width: 1px; }
 
-/* line 218, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 222, /Users/mrflo/marsmallow/css/main.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -203,64 +207,21 @@ textarea {
   position: static;
   width: auto; }
 
-/* line 227, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 231, /Users/mrflo/marsmallow/css/main.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 232, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 236, /Users/mrflo/marsmallow/css/main.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 237, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 241, /Users/mrflo/marsmallow/css/main.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 241, /Users/mrflo/Desktop/marslive/html/css/main.scss */
+/* line 245, /Users/mrflo/marsmallow/css/main.scss */
 .clearfix {
   *zoom: 1; }
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-@media print {
-  /* line 251, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  *, *:before, *:after {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important; }
-  /* line 258, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  a, a:visited {
-    text-decoration: underline; }
-  /* line 261, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  /* line 264, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  /* line 268, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  a[href^="#"]:after, a[href^="javascript:"]:after {
-    content: ""; }
-  /* line 272, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-  /* line 276, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  thead {
-    display: table-header-group; }
-  /* line 280, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  tr, img {
-    page-break-inside: avoid; }
-  /* line 283, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  img {
-    max-width: 100% !important; }
-  /* line 288, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3; }
-  /* line 293, /Users/mrflo/Desktop/marslive/html/css/main.scss */
-  h2, h3 {
-    page-break-after: avoid; } }
 
 /*# sourceMappingURL=main.css.map */

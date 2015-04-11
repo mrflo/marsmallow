@@ -29,6 +29,18 @@ $(function () {
         );
     });
 
+    var el = $("*[draggable='true']");
+    el.each(function () {
+        $(this).bind("touchstart", drag);
+        $(this).bind("touchleave", drop);
+        $(this).bind("touchmove", drag_over);
+    });
+
+
+    function handleStart(event) {
+        // Handle the start of the touch
+    }
+
 });
 
 
@@ -39,9 +51,11 @@ function drag(ev) {
     var style = window.getComputedStyle(ev.target, null);
     offset_data = ev.target.id + ',' + '0,0';
     //offset_data = ev.target.id + ',' + (parseInt(style.getPropertyValue("left"), 10) - ev.clientX) + ',' + (parseInt(style.getPropertyValue("top"), 10) - ev.clientY);
+    //if ($('html.touch') !== undefined) {
     var img = document.createElement("img");
     img.src = "img/none.png";
     ev.dataTransfer.setDragImage(img, 0, 0);
+    // }
 
     ev.dataTransfer.setData("text/plain", offset_data);
 }
@@ -75,6 +89,9 @@ function drop(ev) {
         dm.id = dm.id + '-' + Math.random();
     } else
         dm = document.getElementById(data[0])
+
+    //tooltip
+    //$(dm).addClass("tooltip");
 
     dm.style.left = (ev.clientX + parseInt(data[1], 10)) + 'px';
     dm.style.top = (ev.clientY + parseInt(data[2], 10)) + 'px';
