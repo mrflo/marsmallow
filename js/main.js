@@ -28,9 +28,7 @@ $(function () {
             600
         );
     });
-    //drage event
-    $("img").draggable();
-    $("img").droppable();
+
 });
 
 
