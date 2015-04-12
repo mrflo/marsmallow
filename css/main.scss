@@ -188,85 +188,128 @@ textarea {
     -moz-user-select: none;
     -khtml-user-drag: element;
     cursor: move;
+    z-index: 999;
 }
 
+div.tooltips {
+    position: relative;
+    display: inline;
+}
 
+div.tooltips span {
+    position: absolute;
+    padding: 0 6px;
+    color: #000000;
+    background: #FFFFFF;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 6px;
+}
 
+div.tooltips span:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #FFFFFF;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+div:hover.tooltips span {
+    visibility: visible;
+    opacity: 0.8;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -76px;
+    z-index: 999;
+}
+
+.fancybox-skin {
+    background: rgba(0, 0, 0, 0.5);
+}
 /* SVG */
-.rover {
 
-}
-
+.rover {}
 /* //////////////
 /* Transitions //
 /* ////////////// */
 
 @keyframes poly-fadeIn {
-    to{
-        transform: scale3d(1,1,1);
+    to {
+        transform: scale3d(1, 1, 1);
         opacity: 1;
     }
 }
+
 @-webkit-keyframes poly-fadeIn {
-    0{
-        -webkit-transform: scale3d(0,0,0);
+    0 {
+        -webkit-transform: scale3d(0, 0, 0);
         opacity: 0;
     }
-    100%{
-        -webkit-transform: scale3d(1,1,1);
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
         opacity: 1;
     }
 }
+
 @-moz-keyframes poly-fadeIn {
-    0{
-        -moz-transform: scale3d(0,0,0);
+    0 {
+        -moz-transform: scale3d(0, 0, 0);
         opacity: 0;
     }
-    100%{
-        -moz-transform: scale3d(1,1,1);
+    100% {
+        -moz-transform: scale3d(1, 1, 1);
         opacity: 1;
     }
 }
 
 @keyframes poly-scale {
-    0%{
-        transform: scale3d(1,1,1);
+    0% {
+        transform: scale3d(1, 1, 1);
         opacity: 1;
     }
     50% {
-        transform: scale3d(1.5,1.5,1.5);
+        transform: scale3d(1.5, 1.5, 1.5);
         opacity: 0.92;
     }
     100% {
-        transform: scale3d(1,1,1);
+        transform: scale3d(1, 1, 1);
         opacity: 1;
     }
 }
+
 @-webkit-keyframes poly-scale {
-    0%{
-        -webkit-transform: scale3d(1,1,1);
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
         opacity: 1;
     }
     50% {
-        -webkit-transform: scale3d(1.5,1.5,1.5);
+        -webkit-transform: scale3d(1.5, 1.5, 1.5);
         opacity: 0.92;
     }
     100% {
-        -webkit-transform: scale3d(1,1,1);
+        -webkit-transform: scale3d(1, 1, 1);
         opacity: 1;
     }
 }
+
 @-moz-keyframes poly-scale {
-    0%{
-        -moz-transform: scale3d(1,1,1);
+    0% {
+        -moz-transform: scale3d(1, 1, 1);
         opacity: 1;
     }
     50% {
-        -moz-transform: scale3d(1.5,1.5,1.5);
+        -moz-transform: scale3d(1.5, 1.5, 1.5);
         opacity: 0.92;
     }
     100% {
-        -moz-transform: scale3d(1,1,1);
+        -moz-transform: scale3d(1, 1, 1);
         opacity: 1;
     }
 }
@@ -277,110 +320,111 @@ textarea {
         transform: translateY(0px);
     }
 }
+
 @-webkit-keyframes poly-scale-2 {
     100% {
         opacity: 1;
         -webkit-transform: translateY(0px);
     }
 }
+
 @-moz-keyframes poly-scale-2 {
     100% {
         opacity: 1;
         -moz-transform: translateY(0px);
     }
 }
-
-
-
 /* Application */
-.scene{
+
+.scene {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: #fdeed7; /* Old browsers */
-background: -moz-linear-gradient(45deg, #fdeed7 0%, #fddba7 35%, #ed9a8f 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#fdeed7), color-stop(35%,#fddba7), color-stop(100%,#ed9a8f)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(45deg, #fdeed7 0%,#fddba7 35%,#ed9a8f 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(45deg, #fdeed7 0%,#fddba7 35%,#ed9a8f 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(45deg, #fdeed7 0%,#fddba7 35%,#ed9a8f 100%); /* IE10+ */
-background: linear-gradient(45deg, #fdeed7 0%,#fddba7 35%,#ed9a8f 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdeed7', endColorstr='#ed9a8f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #fdeed7;
+    /* Old browsers */
     
-    z-index: 50;
+    background: -moz-linear-gradient(45deg, #fdeed7 0%, #fddba7 35%, #ed9a8f 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #fdeed7), color-stop(35%, #fddba7), color-stop(100%, #ed9a8f));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(45deg, #fdeed7 0%, #fddba7 35%, #ed9a8f 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(45deg, #fdeed7 0%, #fddba7 35%, #ed9a8f 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(45deg, #fdeed7 0%, #fddba7 35%, #ed9a8f 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(45deg, #fdeed7 0%, #fddba7 35%, #ed9a8f 100%);
+    /* W3C */
+    /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fdeed7', endColorstr='#ed9a8f', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    
+    z-index: 99;
     -webkit-perspective: 1000px;
     perspective: 1000px;
 }
-
-
-
 /* Rover */
 
 $duration-fade: 1s;
 $offset-last-anim: 0.25s;
-
 .rover > polygon:nth-of-type(even) {
     -webkit-animation: poly-fadeIn 1600ms $duration-fade 1 forwards;
     -moz-animation: poly-scale 1600ms $duration-fade 1 forwards;
     animation: poly-scale 1600ms $duration-fade 1 forwards;
 }
+
 .rover > polygon:nth-of-type(odd) {
     -webkit-animation: poly-fadeIn 1600ms $duration-fade 1 forwards;
     -moz-animation: poly-scale 1600ms $duration-fade 1 forwards;
     animation: poly-scale 1600ms $duration-fade 1 forwards;
 }
+
 .rover > polygon:nth-of-type(3n+2) {
     -webkit-animation: poly-fadeIn 400ms $duration-fade 1 forwards, poly-scale 1200ms $duration-fade + 0.25 1 forwards, poly-translate 1s 1800ms 1 forwards;
     -moz-animation: poly-fadeIn 400ms $duration-fade 1 forwards, poly-scale 1200ms $duration-fade 1 forwards, poly-translate 1s 1800ms 1 forwards;
     animation: poly-fadeIn 400ms $duration-fade 1 forwards, poly-scale 1200ms $duration-fade 1 forwards, poly-translate 1s 1800ms 1 forwards;
 }
-.rover > polygon{
+
+.rover > polygon {
     -webkit-transform-origin: center center;
     -moz-transform-origin: center center;
     transform-origin: center center;
-
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-
     -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
     -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
-    transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);;
-
-    -webkit-transform: scale3d(0,0,0);
-    -moz-transform: scale3d(0,0,0);
-    transform: scale3d(0,0,0);
-
+    transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+    ;
+    -webkit-transform: scale3d(0, 0, 0);
+    -moz-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
     opacity: 0;
-    
 }
-
 /* Landscape */
 
-.svg-landscape > polygon{
+.svg-landscape > polygon {
     -webkit-transform-origin: center center;
     -moz-transform-origin: center center;
     transform-origin: center center;
-
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-
     -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
     -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
-    transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);;
-
+    transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+    ;
     -webkit-transform: translateY(1000px);
     -moz-transform: translateY(1000px);
     transform: translateY(1000px);
-    
     -webkit-animation: poly-scale-2 $duration-fade 1 forwards;
     -moz-animation: poly-scale-2 $duration-fade 1 forwards;
     animation: poly-scale-2 $duration-fade 1 forwards;
-
     opacity: 1;
-    
 }
-
-
 /*
 $polygons-rover: 1567;
 $polygons-landscape: 2103;
@@ -409,7 +453,6 @@ $delay-rover: 1s;
 
 
 */
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */

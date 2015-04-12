@@ -36,6 +36,18 @@ $(function () {
         $(this).bind("touchmove", drag_over);
     });
 
+    $(".fancy").fancybox({
+        maxWidth: 800,
+        maxHeight: 600,
+        fitToView: true,
+        width: '70%',
+        //height: '70%',
+        autoSize: true,
+        closeClick: false,
+        openEffect: 'none',
+        closeEffect: 'none'
+    });
+
 
     function handleStart(event) {
         // Handle the start of the touch
