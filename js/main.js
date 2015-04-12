@@ -49,7 +49,7 @@ var offset_data; //Global variable as Chrome doesn't allow access to event.dataT
 function drag(ev) {
 
     var style = window.getComputedStyle(ev.target, null);
-    offset_data = ev.target.id + ',' + '0,0';
+    offset_data = ev.target.id + ',' + -(ev.target.width / 2)+','+ -(ev.target.height / 2);
     //offset_data = ev.target.id + ',' + (parseInt(style.getPropertyValue("left"), 10) - ev.clientX) + ',' + (parseInt(style.getPropertyValue("top"), 10) - ev.clientY);
     //if ($('html.touch') !== undefined) {
     var img = document.createElement("img");
@@ -68,6 +68,9 @@ function drag_over(event) {
         offset = offset_data.split(',');
     }
     var dm = document.getElementById(offset[0]);
+    console.log(dm);
+    
+    
     dm.style.left = (event.clientX + parseInt(offset[1], 10)) + 'px';
     dm.style.top = (event.clientY + parseInt(offset[2], 10)) + 'px';
     event.preventDefault();
@@ -93,6 +96,8 @@ function drop(ev) {
     //tooltip
     //$(dm).addClass("tooltip");
 
+      
+        
     dm.style.left = (ev.clientX + parseInt(data[1], 10)) + 'px';
     dm.style.top = (ev.clientY + parseInt(data[2], 10)) + 'px';
     if (ev.target.id == 'landscape')

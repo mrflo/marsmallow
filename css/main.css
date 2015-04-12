@@ -77,17 +77,90 @@ textarea {
   height: auto;
   width: 100%;
   min-height: 100%;
-  background: grey;
+  background: transparent;
   position: absolute;
-  top: 0; }
-  /* line 97, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  top: 0;
+  z-index: 888888; }
+  /* line 98, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   .landscape img {
     position: absolute;
     left: 100px;
     top: 0;
     z-index: 60; }
 
-/* line 105, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 106, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+header {
+  position: fixed;
+  height: 64px;
+  z-index: 9999;
+  margin: 0 auto;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); }
+
+/* line 118, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+.hexagon img {
+  width: 70%;
+  margin-top: 20px; }
+
+/* line 122, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+.hexagon {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 150px;
+  height: 82px;
+  position: relative;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: black;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #fff; }
+
+/* line 137, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+.hexagon::before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: "";
+  top: -40px;
+  left: 0;
+  border: 75px solid transparent;
+  border-top: 0 solid;
+  border-bottom: 40px solid #fff;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: black;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: none; }
+
+/* line 157, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+.hexagon::after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: "";
+  bottom: -40px;
+  left: 0;
+  border: 75px solid transparent;
+  border-top: 40px solid #fff;
+  border-bottom: 0 solid;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: black;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: none; }
+
+/* line 178, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .objects {
   height: 15%;
   width: 100%;
@@ -97,7 +170,7 @@ textarea {
   margin: 0;
   padding: 0;
   overflow: hidden; }
-  /* line 114, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 187, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   .objects .btn {
     position: absolute;
     top: 50%;
@@ -107,22 +180,22 @@ textarea {
     height: 68px;
     width: 17px;
     z-index: 99; }
-    /* line 123, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+    /* line 196, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
     .objects .btn i {
       background-color: black;
       border-radius: 25%;
       border: 1x solid grey;
       padding: 5px;
       cursor: pointer; }
-  /* line 131, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 204, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   .objects .btn-prev {
     left: 0px;
     padding-left: 5px; }
-  /* line 135, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 208, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   .objects .btn-next {
     right: 0px;
     padding-right: 15px; }
-  /* line 139, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 212, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   .objects .slider {
     margin: 0 20px;
     position: absolute;
@@ -130,11 +203,11 @@ textarea {
     height: 100%;
     width: 100%;
     text-align: center; }
-    /* line 146, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+    /* line 219, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
     .objects .slider img {
       height: 100%;
       width: auto; }
-  /* line 151, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 224, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   .objects ul {
     margin: 0;
     padding: 0;
@@ -144,7 +217,7 @@ textarea {
     white-space: nowrap;
     float: left;
     width: 100%; }
-  /* line 161, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 234, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   .objects li {
     margin: 0 10px;
     display: inline-block;
@@ -155,13 +228,13 @@ textarea {
     transform: translateY(-50%);
     height: 65%;
     max-height: 65%; }
-  /* line 168, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 241, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   .objects li a {
     color: #ffffff;
     text-decoration: none; }
 
 /* Prevent the text contents of draggable elements from being selectable. */
-/* line 175, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 248, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 [draggable] {
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -171,7 +244,7 @@ textarea {
   -khtml-user-drag: element;
   -webkit-user-drag: element; }
 
-/* line 186, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 259, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 *[draggable=true] {
   -moz-user-select: none;
   -khtml-user-drag: element;
@@ -182,101 +255,101 @@ textarea {
 /* Transitions //
 /* ////////////// */
 @keyframes poly-fadeIn {
-  /* line 205, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 278, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   to {
     transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @-webkit-keyframes poly-fadeIn {
-  /* line 211, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 284, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   0 {
     -webkit-transform: scale3d(0, 0, 0);
     opacity: 0; }
 
-  /* line 215, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 288, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @-moz-keyframes poly-fadeIn {
-  /* line 221, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 294, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   0 {
     -moz-transform: scale3d(0, 0, 0);
     opacity: 0; }
 
-  /* line 225, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 298, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   100% {
     -moz-transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @keyframes poly-scale {
-  /* line 232, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 305, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   0% {
     transform: scale3d(1, 1, 1);
     opacity: 1; }
 
-  /* line 236, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 309, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   50% {
     transform: scale3d(1.5, 1.5, 1.5);
     opacity: 0.92; }
 
-  /* line 240, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 313, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   100% {
     transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @-webkit-keyframes poly-scale {
-  /* line 246, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 319, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     opacity: 1; }
 
-  /* line 250, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 323, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   50% {
     -webkit-transform: scale3d(1.5, 1.5, 1.5);
     opacity: 0.92; }
 
-  /* line 254, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 327, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @-moz-keyframes poly-scale {
-  /* line 260, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 333, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   0% {
     -moz-transform: scale3d(1, 1, 1);
     opacity: 1; }
 
-  /* line 264, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 337, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   50% {
     -moz-transform: scale3d(1.5, 1.5, 1.5);
     opacity: 0.92; }
 
-  /* line 268, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 341, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   100% {
     -moz-transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @keyframes poly-scale-2 {
-  /* line 275, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 348, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   100% {
     opacity: 1;
     transform: translateY(0px); } }
 
 @-webkit-keyframes poly-scale-2 {
-  /* line 281, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 354, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0px); } }
 
 @-moz-keyframes poly-scale-2 {
-  /* line 287, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+  /* line 360, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
   100% {
     opacity: 1;
     -moz-transform: translateY(0px); } }
 
 /* Application */
-/* line 296, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 369, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .scene {
   position: absolute;
   bottom: 0;
@@ -298,30 +371,30 @@ textarea {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdeed7', endColorstr='#ed9a8f',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
-  z-index: 50;
+  z-index: 7777;
   -webkit-perspective: 1000px;
   perspective: 1000px; }
 
 /* Rover */
-/* line 322, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 395, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .rover > polygon:nth-of-type(even) {
   -webkit-animation: poly-fadeIn 1600ms 1s 1 forwards;
   -moz-animation: poly-scale 1600ms 1s 1 forwards;
   animation: poly-scale 1600ms 1s 1 forwards; }
 
-/* line 327, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 400, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .rover > polygon:nth-of-type(odd) {
   -webkit-animation: poly-fadeIn 1600ms 1s 1 forwards;
   -moz-animation: poly-scale 1600ms 1s 1 forwards;
   animation: poly-scale 1600ms 1s 1 forwards; }
 
-/* line 332, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 405, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .rover > polygon:nth-of-type(3n+2) {
   -webkit-animation: poly-fadeIn 400ms 1s 1 forwards, poly-scale 1200ms 1.25s 1 forwards, poly-translate 1s 1800ms 1 forwards;
   -moz-animation: poly-fadeIn 400ms 1s 1 forwards, poly-scale 1200ms 1s 1 forwards, poly-translate 1s 1800ms 1 forwards;
   animation: poly-fadeIn 400ms 1s 1 forwards, poly-scale 1200ms 1s 1 forwards, poly-translate 1s 1800ms 1 forwards; }
 
-/* line 337, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 410, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .rover > polygon {
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
@@ -337,7 +410,7 @@ textarea {
   opacity: 0; }
 
 /* Landscape */
-/* line 359, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 432, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .svg-landscape > polygon {
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
@@ -389,12 +462,12 @@ $delay-rover: 1s;
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 427, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 500, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
 
-/* line 432, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 505, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -405,7 +478,7 @@ $delay-rover: 1s;
   position: absolute;
   width: 1px; }
 
-/* line 444, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 517, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -414,20 +487,20 @@ $delay-rover: 1s;
   position: static;
   width: auto; }
 
-/* line 453, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 526, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 458, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 531, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 463, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 536, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 467, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
+/* line 540, /Users/matthieu/Documents/Experiment/SPACE_APPS/marsmallow/css/main.scss */
 .clearfix {
   *zoom: 1; }
 
