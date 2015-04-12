@@ -98,6 +98,7 @@ textarea {
         position: absolute;
         left: 100px;
         top: 0;
+        z-index: 60;
     }
 }
 
@@ -306,7 +307,7 @@ background: -ms-linear-gradient(45deg, #fdeed7 0%,#fddba7 35%,#ed9a8f 100%); /* 
 background: linear-gradient(45deg, #fdeed7 0%,#fddba7 35%,#ed9a8f 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdeed7', endColorstr='#ed9a8f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     
-    
+    z-index: 50;
     -webkit-perspective: 1000px;
     perspective: 1000px;
 }
