@@ -94,7 +94,7 @@ textarea {
     background: transparent;
     position: absolute;
     top: 0;
-    z-index: 888888;
+    z-index: 5555;
     img {
         position: absolute;
         left: 100px;
@@ -103,77 +103,77 @@ textarea {
     }
 }
 
-header{
+header {
     position: fixed;
     height: 64px;
-    z-index: 9999;
+    z-index: 6666;
     margin: 0 auto;
     text-align: center;
     left: 50%;
-    
     transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
-.hexagon img{
+
+.hexagon img {
     width: 70%;
     margin-top: 20px;
 }
+
 .hexagon {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 150px;
-  height: 82px;
-  position: relative;
-  border: none;
-  font: normal 100%/normal Arial, Helvetica, sans-serif;
-  color: rgba(0,0,0,1);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  background: #fff;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 150px;
+    height: 82px;
+    position: relative;
+    border: none;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #fff;
 }
 
 .hexagon::before {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 0;
-  height: 0;
-  position: absolute;
-  content: "";
-  top: -40px;
-  left: 0;
-  border: 75px solid rgba(0,0,0,0);
-  border-top: 0 solid;
-  border-bottom: 40px solid #fff;
-  font: normal 100%/normal Arial, Helvetica, sans-serif;
-  color: rgba(0,0,0,1);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  text-shadow: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 0;
+    border: 75px solid rgba(0, 0, 0, 0);
+    border-top: 0 solid;
+    border-bottom: 40px solid #fff;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: none;
 }
 
 .hexagon::after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 0;
-  height: 0;
-  position: absolute;
-  content: "";
-  bottom: -40px;
-  left: 0;
-  border: 75px solid rgba(0,0,0,0);
-  border-top: 40px solid #fff;
-  border-bottom: 0 solid;
-  font: normal 100%/normal Arial, Helvetica, sans-serif;
-  color: rgba(0,0,0,1);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  text-shadow: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    left: 0;
+    border: 75px solid rgba(0, 0, 0, 0);
+    border-top: 40px solid #fff;
+    border-bottom: 0 solid;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: none;
 }
-
 
 .objects {
     height: 15%;
@@ -423,9 +423,8 @@ div:hover.tooltips span {
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #fdeed7), color-stop(35%, #fddba7), color-stop(100%, #ed9a8f));
     /* Chrome,Safari4+ */
     
-<<<<<<< HEAD
-    z-index: 7777;
-=======
+    z-index: 4444;
+    
     background: -webkit-linear-gradient(45deg, #fdeed7 0%, #fddba7 35%, #ed9a8f 100%);
     /* Chrome10+,Safari5.1+ */
     
@@ -440,8 +439,6 @@ div:hover.tooltips span {
     /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fdeed7', endColorstr='#ed9a8f', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
     
-    z-index: 99;
->>>>>>> origin/master
     -webkit-perspective: 1000px;
     perspective: 1000px;
 }
